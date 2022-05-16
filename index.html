@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Linking stylesheet  -->
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <span id="icon"></span>
+    <div id="main-container">
+        <div id="curr-location-weather">
+            <span id="date"></span>
+
+            <div id="get-weather-info">
+                <h3>Want Any Other Cities Weather Info?</h3>
+                <div class="getCity">
+                    <input type="text" name="city" id="cityName" placeholder="Enter a city name">
+                    <button type="submit" id="cityBtn">Search</button>
+                </div>
+            </div>
+
+            <div id="main-info">
+                <span id="temp"></span>
+                <span id="description"></span>
+            </div>
+
+            <div class="other-info">
+                <div>
+                    <p>Cloudiness</p>
+                    <span id="cloudiness"></span>
+                </div>
+                <div>
+                    <p>Wind Speed</p>
+                    <span id="wind-speed"></span>
+                </div>
+                <div>
+                    <p>Humidity</p>
+                    <span id="humidity"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type='text/javascript' src='config.js'></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

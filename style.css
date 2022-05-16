@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(./images/window.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+} 
+
+.iconImg{
+   filter: drop-shadow(1px 1px 5px black); 
+}
+
+#main-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alegreya', serif;
+}
+
+#curr-location-weather{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    margin: 20px;
+}
+
+#date{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#get-weather-info h3{
+    margin-top:25px;
+    text-align: center;
+    font-family: 'Alegreya', serif;
+}
+
+.getCity{
+    height: 50px;
+    display: flex;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#cityBtn{
+    width: 20%;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 0px 10px 3px black;    
+    border:none;
+    outline: none;
+}
+
+#main-info{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px rgb(4, 25, 65);
+}
+
+#main-info :hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#temp, #description{
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 10px 3px  rgb(0, 0, 0);
+}
+
+.other-info{
+    font-family: 'Alegreya', serif;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    overflow: auto;
+    font-size: 2rem;
+}
+
+.other-info div{
+    padding: 25px;
+    margin: 10px;
+    font-size:1.7rem;
+    border-radius: 50px 0px;    
+    box-shadow: 0px 0px 10px 4px  rgb(2, 35, 73);    
+    text-shadow: 1px 1px 2px rgb(4, 25, 65);
+}
+
+.other-info div:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+#cityName{
+    width: 90%;
+    display: inline;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Alegreya', serif;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0px 0px 10px 3px  black;    
+    outline:none;
+    border: none;
+}
+
+#cityBtn{
+    cursor: pointer;
+}
+.apologyDiv{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Alegreya', serif;
+    overflow: auto;
+    background-color: rgb(203, 205, 207);
+    box-shadow: 0px 0px 10px 1px black;    
+    border-radius: 25px;
+}
